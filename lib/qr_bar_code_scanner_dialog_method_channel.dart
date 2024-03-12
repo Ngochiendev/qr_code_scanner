@@ -95,6 +95,13 @@ class _ScannerWidgetState extends State<ScannerWidget> {
           ),
         ),
         ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.blue,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
