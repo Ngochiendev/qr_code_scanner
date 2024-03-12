@@ -94,6 +94,7 @@ class _ScannerWidgetState extends State<ScannerWidget> {
             child: _buildQrView(context),
           ),
         ),
+        const SizedBox(height: 10),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
             foregroundColor: Colors.white,
@@ -106,8 +107,9 @@ class _ScannerWidgetState extends State<ScannerWidget> {
             Navigator.pop(context);
           },
           child: const Text("Dừng quét QRCode",
-              style: TextStyle(color: Colors.black54)),
+              style: TextStyle(color: Colors.white)),
         ),
+        const SizedBox(height: 10),
       ],
     );
   }
